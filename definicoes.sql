@@ -25,11 +25,11 @@ CREATE TABLE Dispositivo(
     id_dispositivo INT PRIMARY KEY,
     status VARCHAR(13) CHECK(status IN ('funcional', 'em manutencao', 'defeituoso')), 
     marca VARCHAR(64),
-    nr_serie INT NOT NULL,
+    nr_serie VARCHAR(128) NOT NULL,
     modelo VARCHAR(256) NOT NULL,
-    capacidade_btu INT,
-    tensao_v FLOAT(2) NOT NULL,
-    potencia_w FLOAT(2) NOT NULL,
+    capacidade_btu FLOAT(2),
+    tensao_v FLOAT(6) NOT NULL,
+    potencia_w FLOAT(6) NOT NULL,
     tipo_dispositivo VARCHAR(16) CHECK(tipo_dispositivo IN ('ar-condicionado', 'tomada', 'televisao', 'lampada', 'outro'))
 );
 
@@ -38,7 +38,7 @@ CREATE TABLE Manutencao(
     descricao_servico VARCHAR(512) NOT NULL,
     tipo VARCHAR(10) CHECK(tipo IN ('preventiva', 'corretiva'))
     data_manutencao DATE,
-    custo_centavos INT,
+    custo_reais FLOAT(2),
     proxima_manutencao BOOLEAN NOT NULL DEFAULT(FALSE),
     matricula_requisitante CHAR(12) NOT NULL,
     id_dispositivo INT NOT NULL,
@@ -48,7 +48,7 @@ CREATE TABLE Manutencao(
 
 CREATE TABLE Sala(
     cod_sala INT PRIMARY KEY,
-    area_m2 FLOAT(2) NOT NULL,
+    area_m2 FLOAT(3) NOT NULL,
     bloco VARCHAR(64) NOT NULL,
     andar INT NOT NULL CHECK(andar >= 0),
     tipo_ambiente VARCHAR(7) CHECK(tipo_ambiente IN ('aberto', 'fechado')),
