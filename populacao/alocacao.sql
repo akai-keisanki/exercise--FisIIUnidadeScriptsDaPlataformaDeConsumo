@@ -1,0 +1,3 @@
+-- INSERT
+--     INTO Alocacao(id_dispositivo, cod_sala, data_instalacao, data_remocao, status_alocacao)
+--     VALUES(..., ..., ..., ..., ...);

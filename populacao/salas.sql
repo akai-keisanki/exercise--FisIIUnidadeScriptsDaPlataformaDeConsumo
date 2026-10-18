@@ -1,0 +1,3 @@
+-- INSERT
+--     INTO Sala(cod_sala, area_m2, bloco, andar, tipo_ambiente, capacidade_pessoas)
+--     VALUES(..., ..., ..., ..., ..., ...);

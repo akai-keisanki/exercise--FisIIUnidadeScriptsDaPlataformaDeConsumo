@@ -1,0 +1,3 @@
+-- INSERT
+--     INTO Dispositivo(id_dispositivo, status, marca, nr_serie, modelo, capacidade_btu, tensao_v, potencia_w, tipo_dispositivo)
+--     VALUES(..., ..., ..., ..., ..., ..., ..., ..., ...);

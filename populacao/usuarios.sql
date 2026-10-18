@@ -1,0 +1,13 @@
+-- INSERT
+--     INTO Usuario(matricula, nome, email, hash_senha, perfil, data_cadastro)
+--     VALUES(..., ..., ..., ..., ..., ...);
+-- INSERT
+--     INTO UsuarioAdmin(matricula_usuario)
+--     VALUES(...);
+
+-- INSERT
+--     INTO Usuario(matricula, nome, email, hash_senha, perfil, data_cadastro)
+--     VALUES(..., ..., ..., ..., ..., ...);
+-- INSERT
+--     INTO UsuarioTecnico(matricula_usuario)
+--     VALUES(...);
