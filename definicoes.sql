@@ -1,3 +1,7 @@
+CREATE DATABASE plataforma_de_consumo;
+
+USE plataforma_de_consumo;
+
 CREATE TABLE Usuario(
     matricula CHAR(12) PRIMARY KEY,
     nome VARCHAR(64) NOT NULL,
