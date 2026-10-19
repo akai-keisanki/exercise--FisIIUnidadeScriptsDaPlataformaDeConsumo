@@ -52,6 +52,7 @@ CREATE TABLE Sala(
     bloco VARCHAR(64) NOT NULL,
     andar INTEGER NOT NULL CHECK(andar >= 0),
     tipo_ambiente VARCHAR(7) CHECK(tipo_ambiente IN ('aberto', 'fechado')),
+    nome VARCHAR(128) NOT NULL;
     capacidade_pessoas INTEGER
 );
 
